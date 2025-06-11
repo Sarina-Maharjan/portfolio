@@ -4,45 +4,55 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio - Sarina Maharjan</title>
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&display=swap" rel="stylesheet">
 </head>
+<style>
+.navbar, p{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.3em;
+}
+h1{
+    font-family: 'Edu QLD Hand', cursive; font-weight: 600;
+}
+
+</style>
+
+
 <body>
   <div class="container">
-    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #f8f8f8; border-bottom: 1px solid #eee;">
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 250px; background-color: #f8f8f8; border-bottom: 1px solid #eee;">
     <div class="title-section" style="display: flex; align-items: center;">
-        <h1 style="margin: 0; font-size: 2em;">
-            <a href="index.html" style="text-decoration: none; color: #333;">Sarina Maharjan</a>
-        </h1>
+        <h1 style="margin: 0; font-size: 1em; color: #333;">
+        <a href="/index.html" style="text-decoration: none; color: inherit;">Sarina</a>
+    </h1>
     </div>
-    <nav style="display: flex; gap: 20px;">
-        <a href="/graphics.html" style="font-weight: bold; color: #555; text-decoration: none;">Graphics</a>
+    <nav class="navbar" style="display: flex; gap: 20px;">
+         <a href="/graphics.html" style="font-weight: bold; color: #555; text-decoration: none;">Graphics</a>
         <a href="/web.html" style="font-weight: bold; color: #555; text-decoration: none;">Web</a>
         <a href="/photo.html" style="font-weight: bold; color: #555; text-decoration: none;">Photography</a>
     </nav>
     </header>
 
-<section class="image-grid-section" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: 20px auto; background-color: #f9f9f9; border-radius: 8px;">
-
-    <div class="grid-item" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://placehold.co/400x300/4CAF50/FFFFFF/png?text=Image+1" alt="A green placeholder image with text Image 1" style="display: block; width: 100%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="grid-item" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://placehold.co/300x500/2196F3/FFFFFF/png?text=Image+2" alt="A blue placeholder image with text Image 2" style="display: block; width: 100%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="grid-item" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://placehold.co/500x250/FFC107/333333/png?text=Image+3" alt="A yellow placeholder image with text Image 3" style="display: block; width: 100%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="grid-item" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://placehold.co/600x600/9C27B0/FFFFFF/png?text=Image+4" alt="A purple placeholder image with text Image 4" style="display: block; width: 100%; height: auto; object-fit: cover;">
-    </div>
-
-    <div class="grid-item" style="display: flex; justify-content: center; align-items: center; overflow: hidden; background-color: #fff; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-        <img src="https://placehold.co/350x450/E91E63/FFFFFF/png?text=Image+5" alt="A pink placeholder image with text Image 5" style="display: block; width: 100%; height: auto; object-fit: cover;">
-    </div>
-
+ <section class="images-row" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 1200px; margin: 0 auto;">
+  <!-- Top Left: Image 1 -->
+  <div>
+    <img src="DSC_1770.jpg" alt="Photo 1" style="width: 100%;">
+  </div>
+  <!-- Top Right: Text -->
+   <div>
+    <img src="DSC_1835.jpg" alt="Photo 1" style="width: 110%;">
+  </div>
+ <!-- Bottom Right: Image 3 -->
+  <div>
+    <img src="DSC_9679.jpg" alt="Photo 3" style="width: 100%;">
+  </div>
+   <!-- Bottom Left: Image 2 -->
+  <div>
+    <img src="DSC_2152.jpg" alt="Photo 2" style="width: 100%;">
+  </div>
 </section>
+
 </body>
 </html>
